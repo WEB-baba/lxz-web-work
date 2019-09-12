@@ -2,3 +2,10 @@ body{
     height: 300px;
     background-color: red;
 }
+#lxz{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 50%;
+	
+}
