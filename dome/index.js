@@ -1,3 +1,4 @@
-document.body.onclick = function(){
-    alert(1);
+var asd=document.getElementById('lxz');
+asd.onclick = function(){
+	asd.style.backgroundColor="yellow";
 }
