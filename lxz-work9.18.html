@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+</head>
+<body>
+    <div id="show"></div>
+    <input type="text" id="in1">
+     <input type="text" id="in2"> 
+    <button id="btn">计算</button>
+    <script>
+        var in1=document.getElementById('in1');
+        var in2=document.getElementById('in2');
+        var btn=document.getElementById('btn');
+         btn.onclick=function(){  
+         if(isNaN(in1.value)||isNaN(in2.value)==true){ 
+         	alert("请输入一个数字")
+         }else{
+         	var d=parseInt(Number(in1.value))+ parseInt(Number(in2.value));
+             show.innerHTML=d;
+         }
+        }
+    </script>
+</body>
+</html>
