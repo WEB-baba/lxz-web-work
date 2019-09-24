@@ -7,7 +7,6 @@
    2.用标签名获取getElementsByTagName()
    3.用类名选择器获取getElementsByClassName()
    4.用选择器获取querySelector()和querySelectorAll()
-   5.获取元素样式
    
 2.如果有10个div元素,在不给元素设置id的情况下如何找到第4个div元素?
 答:可以通过元素的下标来查找
