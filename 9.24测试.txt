@@ -1,3 +1,7 @@
+#测验
+##2019年9月24日
+###李晓振
+
 1.获取元素的方法有哪些?并简单描述该方法.
 答:1.用id获取getElementById()
    2.用标签名获取getElementsByTagName()
