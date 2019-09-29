@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="yhm" placeholder="请输入用户名" />
+		<span id="span"></span>
+		<br/>
+		<input type="password" id="ma" placeholder="请输入密码" />
+		<br/>
+		<button id="btn">提交</button>
+		<script type="text/javascript">
+			var yhm = document.getElementById('yhm');
+			var ma = document.getElementById('ma');
+			var btn = document.getElementById('btn');
+			var span = document.getElementById('span');
+			var arr = ['tom','jack','lili'];
+			yhm.onblur = function(){
+				if(yhm.value==""){
+					span.innerHTML = '请输入用户名';
+				}else if(arr.indexOf(yhm.value) == -1 ){
+						span.innerHTML = '用户名可用';
+					}else{
+						span.innerHTML = '用户名已被注册';
+					}
+			}
+			btn.onclick = function(){
+				if(yhm.value == ''){
+					alert('用户名不能为空');
+				}else if(ma.value == ''){
+					alert('密码不能为空');
+				}else if(arr.indexOf(yhm.value) != -1 ){
+					alert('用户名已被注册');
+				}else{
+					alert('注册成功');
+				}
+				}
+		</script>
+	</body>
+</html>
