@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="in1">
+    <button id="btn1">签到</button>
+    <button id="btn2">查询</button>
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+    <script>
+        var in1 = document.getElementById('in1');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var h1 = document.getElementById('h1');
+        var h2 = document.getElementById('h2');
+        var arr1 =  ['老毛主席','小平同志','蔡徐坤','蒋光头','朱毛组合','丁主任','火大爺','中国大炮','老波','嘟嘟姐'];
+        var arr2 = [];
+        btn1.onclick = function(){
+            arr2.push(in1.value);
+            h2.innerHTML = arr2+'签到成功';
+            btn2.onclick = function(){
+                var arr3 = arr1.join('');
+                var reg = new RegExp(arr2.join('|'),'g');
+                // console.log(cc.replace(reg+'-',''));
+                h1.innerHTML = arr3.replace(reg,'')+'未签到';
+            }
+        }
+       
+    </script>
+</body>
+</html>
