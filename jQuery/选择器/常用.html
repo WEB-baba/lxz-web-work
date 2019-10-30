@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+    <style>
+        * {
+             margin: 0;
+             padding: 0;
+        }
+        li {
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="mydiv"></div>
+    <div class="mydiv1"></div>
+    <div></div> -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        // var mydiv = document.getElementById('mydiv');
+        // var mydiv1 = document.getElementsByClassName('mydiv1');
+        // var mydiv2 = document.getElementsByTagName('div');
+        // var lis = document.getElementsByTagName('li');
+        // for(var i=0;i<lis.length;i++){
+        //     lis[i].onclick = function(){
+        //         this.style.backgroundColor = 'blue';
+        //     }
+            
+        // }
+        // console.log(mydiv);
+        // console.log($("#mydiv"));
+        // console.log($("mydiv1"));
+        // console.log($("mydiv2"));
+        $("li").click(function(){
+            $(this).css({"background-color": "blue"});
+        })
+    </script>
+</body>
+</html>

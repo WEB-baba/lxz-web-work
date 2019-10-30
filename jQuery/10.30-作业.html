@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        div{
+            margin: 100px auto;
+        }
+        div > li{
+            width: 50px;
+            height: 50px;
+            border: 5px solid white;
+            border-radius: 50%;
+            /* background-color: blueviolet; */
+            /* list-style: none; */
+            display: inline-block;
+            margin: 0;
+        }
+        div > div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: orangered;
+            display: inline-block;
+            border: 5px solid white;
+            margin: 0;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+        <li class="li1" data-color="orange" style="background-color: orange;"></li>
+        <li class="li2" data-color="palevioletred" style="background-color: palevioletred;"></li>
+        <li class="li3" data-color="greenyellow" style="background-color: greenyellow;"></li>
+        <li class="li4" data-color="slateblue" style="background-color: slateblue;"></li>
+        <li class="li5" data-color="sandybrown" style="background-color: sandybrown;"></li>
+        <li class="li6" data-color="black" style="background-color: black;"></li>
+        <li class="li7" data-color="cyan" style="background-color: cyan;"></li>
+    </div>
+    <script>
+        $("div>li").hide();
+        var $a=0;
+        $("div>div").click(function(){
+            
+            $a++;
+            console.log($a%2);
+            if($a%2==0){
+                $("div>li").hide("slow");
+            }else{
+                $("div>li").show("slow");
+            }
+        })
+
+        $(".li1").click(function(){
+            var a = $(".li1").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li2").click(function(){
+            var a = $(".li2").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li3").click(function(){
+            var a = $(".li3").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+       
+        $(".li4").click(function(){
+            var a = $(".li4").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li5").click(function(){
+            var a = $(".li5").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li6").click(function(){
+            var a = $(".li6").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li7").click(function(){
+            var a = $(".li7").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+    </script>
+</body>
+</html>
